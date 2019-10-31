@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qbL-Vr-lo0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="73n-zu-fk2">
+            <objects>
+                <viewController id="qbL-Vr-lo0" customClass="AuthViewController" customModule="VKNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iB2-Tf-59R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcc-Jm-Rnj">
+                                <rect key="frame" x="102" y="426.5" width="210" height="43"/>
+                                <color key="backgroundColor" red="0.404271245" green="0.58821314570000005" blue="0.80011147260000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="70" minY="7" maxX="70" maxY="7"/>
+                                <state key="normal" title="Войти">
+                                    <color key="titleColor" red="0.75655013319999997" green="0.88926023239999996" blue="0.96873432400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInTouch" destination="qbL-Vr-lo0" eventType="touchUpInside" id="Wkb-r8-yUH"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vk" translatesAutoresizingMaskIntoConstraints="NO" id="I0b-5X-Ss5">
+                                <rect key="frame" x="62" y="132" width="290" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="DVO-M2-FKL"/>
+                                    <constraint firstAttribute="height" constant="120" id="ip5-6w-9hK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32156862745098036" green="0.50588235294117645" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wcc-Jm-Rnj" firstAttribute="top" secondItem="I0b-5X-Ss5" secondAttribute="bottom" constant="174.5" id="Pzq-1B-YfF"/>
+                            <constraint firstItem="wcc-Jm-Rnj" firstAttribute="centerX" secondItem="iB2-Tf-59R" secondAttribute="centerX" id="g31-qL-Q0E"/>
+                            <constraint firstItem="wcc-Jm-Rnj" firstAttribute="centerY" secondItem="iB2-Tf-59R" secondAttribute="centerY" id="ooj-rt-vJ3"/>
+                            <constraint firstItem="I0b-5X-Ss5" firstAttribute="centerX" secondItem="wcc-Jm-Rnj" secondAttribute="centerX" id="vrT-l8-pxJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yMv-gR-kis"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oF1-W1-UMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="vk" width="2000" height="2000"/>
+    </resources>
+</document>
